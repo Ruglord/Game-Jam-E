@@ -59,6 +59,7 @@ int main(int args, char** argc)
 {
     SDL_Window* window = SDL_CreateWindow("Gravity Golf", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,screenWidth,screenHeight,SDL_WINDOW_SHOWN);
     SDL_Event e;
+    RenderProgram::init(screenWidth,screenHeight);
     bool quit = false;
     while (!quit)
     {
